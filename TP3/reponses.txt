@@ -1,0 +1,32 @@
+Exercice 1
+
+1.1)
+En crééant un unique_ptr il existera un seul propiétaire du pointeur à la fois. Cela diminue la complexité du code.
+Contrairement à un pointeur pur, il ne sera pas nécessaire faire la gestion de mémoire du pointeur.
+
+1.2)
+Q1: Le unique_ptr sera supprimé automatiquement en sortant de son scope.
+    Il n'est donc pas nécessaire d'ajouter de destructeur.
+
+Q2: Le programme plante quand l'on exécute fact.build("toto",17) car toto ne fait pas parti
+    des types reconnus par le dictionnaire. Les types reconnus sont integer et real.
+
+Q3: Il faut vérifier à chaque appel de la méthode display() que la variable ne pointe pas sur nullptr
+
+Exercice 2
+
+2.1)
+Q1: Les instanciations de classe définies const ont besoin d'appeler des méthodes const
+    d'où la nécessité d'implémenter deux opérateurs crochets.
+
+Q2: Non, si la méthode n'est pas garantie de ne pas lever des exceptions on ne peut pas
+    mettre noxcept. Ici si i>N une exception peut être lever donc pas de noexcept.
+
+Q3: Oui, les espaces mémoire alloués n'étant pas initialisé, la valeur dans la mémoire allouée
+    contient sa valeur précédente.
+
+2.2)
+Q1: La taille N donnée dépasse la taille maxmiale que peux prendre un size_t(UINT_MAX).
+
+Q2: Le constructeur par défaut ne convient pas, on obtient une erreur de segmentation.
+    Le construeur ne permet pas de créer le unique_ptr qui contient le small_array.

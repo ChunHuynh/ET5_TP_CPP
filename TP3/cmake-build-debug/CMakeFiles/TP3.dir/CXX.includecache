@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chun/ET5_CPP/TP3/class_ex1.h
+memory
+-
+iostream
+-
+map
+-
+
+/home/chun/ET5_CPP/TP3/class_ex2.cpp
+class_ex2.h
+/home/chun/ET5_CPP/TP3/class_ex2.h
+
+/home/chun/ET5_CPP/TP3/class_ex2.h
+iostream
+-
+map
+-
+vector
+-
+memory
+-
+assert.h
+-
+stdexcept
+-
+
+/home/chun/ET5_CPP/TP3/main.cpp
+iostream
+-
+climits
+-
+class_ex1.h
+/home/chun/ET5_CPP/TP3/class_ex1.h
+class_ex2.cpp
+/home/chun/ET5_CPP/TP3/class_ex2.cpp
+

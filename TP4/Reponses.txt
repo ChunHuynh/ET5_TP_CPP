@@ -1,0 +1,20 @@
+Question 2.3
+	std::unordered_multimap peut avoir une clé associée à plusieurs valeur.
+	Ceci n'est pas possible avec std::unordered_map et std::map.
+
+	Il est préférable d'utiliser std::unordered_multimap à std::multimap
+	car l'accès aux éléments est plus rapide.
+
+Question 2.5
+    Remplir le dictionnaire:
+    En moyenne on a une complexité en O(N), N le nombre d'éléments insérés.
+    Au pire on a une complexité N*(size+1), size la taille du container
+
+    Plus grande classe d'anagramme:
+    unordered_multimap permet un accès rapide aux valeurs, il est donc négligeable
+    il faut considérer la complexité de la méthode count qui est linéaire
+    au nombre d'éléments comptés et on utilise N fois count donc
+    la complexité en moyenne est O(somme des éléments de chaque count).
+
+    Au pire, la méthode count est linéaire en la taille du container
+    Donc O(somme des tailles de container de chaque count).

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chun/ET5_CPP/TP4/main.cpp
+point.h
+/home/chun/ET5_CPP/TP4/point.h
+
+/home/chun/ET5_CPP/TP4/point.h
+iostream
+-
+vector
+-
+stdlib.h
+-
+time.h
+-
+cassert
+-
+algorithm
+-
+math.h
+-
+numeric
+-
+fstream
+-
+iterator
+-
+point.hxx
+/home/chun/ET5_CPP/TP4/point.hxx
+
+/home/chun/ET5_CPP/TP4/point.hxx
+
